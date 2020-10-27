@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Vidaloka&display=swap');
+
+
+/* Begin Mobile Styles */
+
+html {
+  font-size: 16px;
+}
+
+p, li {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+li p:first-of-type{
+font-weight: 800;
+}
+
+a {
+  color:black;
+  text-decoration: underline;}
+
+
+h1 {
+  font-family: 'Vidaloka', serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height:3rem;
+  color:black;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Vidaloka', serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height:2rem;
+  color:black;
+  text-align: left;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  line-height:2rem;
+  font-style: italic;
+  font-weight: 800;
+  color:black;
+  text-align: left;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li p {
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+.margins {
+width: 86%;
+margin: 0 auto;
+}
+
+
+.coffee-item, .victual-item {
+padding-bottom:1rem;
+}
+
+.spacer-img {
+text-align: center;
+}
+
+
+
+
+.menu-text {
+font-family: 'Vidaloka', serif;
+font-size: 1.5rem;
+text-transform: uppercase;
+list-style-type: none;
+}
+
+.menu-text a {
+color: black;
+text-decoration: none;
+}
+
+#coffee-victuals {
+background-color: #EBF9FF;
+}
+
+#coffee-victuals > .margins {
+padding:3rem 0px;
+}
+
+.location-details {
+  border: 1px solid #000;
+  padding: 0rem 2rem 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.location-details:last-of-type {
+margin-bottom:3rem;
+}
+
+
+.images img {
+width:100%;
+height: auto;
+margin:.5rem auto;
+}
+
+.images {
+margin: 3rem auto;
+}
+
+footer {
+  border-top: 3px double #000;
+}
+
+.footer-content p {
+text-align: center;
+}
+
+.footer-content {
+  margin: 2rem auto;
+}
+
+
+@media (min-width: 320px) {
+  body {
+    background-color:paleturquoise;
+  }
+}
