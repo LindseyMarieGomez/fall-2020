@@ -41,7 +41,7 @@ h2 {
   text-align: left;
 }
 
-h3 {
+h3, .coffee-tabs label {
   font-family: 'Lora', serif;
   font-size: 1.2rem;
   line-height:2rem;
@@ -77,20 +77,6 @@ text-align: center;
 }
 
 
-
-
-.menu-text {
-font-family: 'Vidaloka', serif;
-font-size: 1.5rem;
-text-transform: uppercase;
-list-style-type: none;
-}
-
-.menu-text a {
-color: black;
-text-decoration: none;
-}
-
 #coffee-victuals {
 background-color: #EBF9FF;
 }
@@ -120,6 +106,8 @@ margin:.5rem auto;
 margin: 3rem auto;
 }
 
+
+
 footer {
   border-top: 3px double #000;
 }
@@ -133,8 +121,134 @@ text-align: center;
 }
 
 
-@media (min-width: 320px) {
-  body {
-    background-color:paleturquoise;
-  }
+header {
+background-color: #EBF9FF;
+width: 100%;
+}
+
+.header-nav {
+  background-color: #EBF9FF;
+  width:86%;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display:flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+
+#logo {
+height:100px;
+}
+
+#toggle {
+display:none;
+}
+
+label {
+font-size: 40px;
+line-height:100px;
+ cursor: pointer;
+}
+
+ul.menu-items {
+padding: 20px 0 40px 0;
+margin: 0;
+list-style-type: none;
+text-align: left;
+border-top:3px double #000;
+
+}
+
+ul.menu-items a {
+  text-decoration:none;
+  line-height:40px;
+  text-align: left;
+  color: black;
+  display:block;
+  font-family: 'Vidaloka', sans-serif;
+  font-size:1.25rem;
+  line-height:3rem;
+  text-transform: uppercase;
+}
+
+#toggle:checked ~ ul.menu-items {
+  display:none;
+}
+
+.coffee-tabs {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#hot-coffee + label, #hot-coffee + label  {
+  cursor:pointer;
+  z-index: 1;
+}
+
+#hot-coffee + label + div, #iced-coffee + label + div  {
+width: 100%;
+padding: 1em;
+order: 1;
+-webkit-order: 1;
+  border: 1px solid #333;
+  margin-left:-1px;
+
+}
+#hot-coffee, #iced-coffee, .coffee-tabs div {
+display:none;
+}
+
+#hot-coffee:checked + label, #iced-coffee:checked + label {
+background-color: lightsalmon;
+}
+
+#hot-coffee:checked + label + div, #iced-coffee:checked + label + div {
+display:block;
+}
+
+
+@media only screen and (min-width: 320px) {
+  .header-nav {
+  background-color: #EBF9FF;
+  width:90%;
+  margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+  display:inline-block;
+  position: relative;
+  padding: 30px 0 30px 0;
+  width:40%;
+}
+
+#logo {
+height:100px;
+}
+
+#toggle {
+display:none;
+}
+
+label {
+display:none;
+}
+
+ul.menu-items, #toggle:checked ~ ul.menu-items {
+display: flex;
+margin: 0;
+list-style-type: none;
+text-align: right;
+border-top:none;
+  width: 60%;
+  justify-content: space-between;
+}
 }

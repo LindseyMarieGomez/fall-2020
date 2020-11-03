@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Vidaloka&display=swap');
+
+/* Begin Mobile Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #004147;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height:100vh;
+}
+
+p, body, li {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+}
+
+h1 {
+  color: white;
+}
+
+.one {
+  background-color: #F6D4D2;
+ }
+
+.two {
+ background-color: #C6DFDF;
+}
+
+.three {
+ background-color: #D3E0C3;
+}
+
+.four {
+ background-color: #F9E4C0;
+}
+
+
+.columns {
+width: 100%;
+max-width: 1440px;
+margin: 0 auto;
+display:flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+position: relative;
+}
+
+.column-block {
+color:black;
+height:50px;
+width: 100%;
+text-align: center;
+padding:10px;
+position:relative;
+margin-bottom: 2rem;
+}
+
+/* Begin Desktop Styles */
+@media only screen and (min-width:400px){
+  .column-block {
+    width:40%;
+  }
+}
