@@ -62,7 +62,8 @@ margin-bottom: 2rem;
 
 /* Begin Desktop Styles */
 @media only screen and (min-width:400px){
-  .column-block {
-    width:40%;
-  }
+ .column-block {
+ width:40%;
+}
+
 }
